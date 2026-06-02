@@ -1,0 +1,41 @@
+{
+  "name": "getframe-mcp",
+  "version": "1.0.0",
+  "description": "MCP server: fetch Framer components for Claude Code to translate to React",
+  "type": "module",
+  "bin": {
+    "getframe-mcp": "./server.mjs",
+    "getframe": "./cli.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "convert.mjs",
+    "cli.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luccodes/getframe-mcp.git"
+  },
+  "keywords": [
+    "framer",
+    "react",
+    "mcp",
+    "claude",
+    "claude-code"
+  ],
+  "scripts": {
+    "start": "node server.mjs",
+    "test:tools": "node test-tools.mjs",
+    "test": "node test-tools.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "acorn": "^8.12.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
